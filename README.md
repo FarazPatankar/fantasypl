@@ -6,13 +6,13 @@ This can be used in the browser and with node.js.
 
 ## Installation
 
-`$ npm install fpl-api`
+`$ npm install fantasypl`
 
 ## Usage
 
-`import FplApi from 'fpl-api'`
+`import FplApi from 'fantasypl'`
 
-You can use fpl-api in the browser by using a module bundler like webpack, rollup, etc.
+You can use fantasypl in the browser by using a module bundler like webpack, rollup, etc.
 
 ## Methods
 
@@ -21,7 +21,7 @@ You can use fpl-api in the browser by using a module bundler like webpack, rollu
 General data such as players, teams, gameweeks, etc.
 
 ```
-import { fetchBootstrap } from 'fpl-api'
+import { fetchBootstrap } from 'fantasypl'
 
 const data = await fetchBootstrap()
 ```
@@ -31,7 +31,7 @@ const data = await fetchBootstrap()
 Data for a player.
 
 ```
-import { fetchElementSummary } from 'fpl-api'
+import { fetchElementSummary } from 'fantasypl'
 
 const playerId = 1
 const data = await fetchElementSummary(playerId)
@@ -47,7 +47,7 @@ Entry event data (picks, transfers, etc.).
 | eventId | ID of a gameweek | number | -       | true     |
 
 ```
-import { fetchEntryEvent } from 'fpl-api'
+import { fetchEntryEvent } from 'fantasypl'
 
 const entryId = 1
 const eventId = 38
@@ -59,7 +59,7 @@ const data = await fetchEntryEvent(entryId, eventId)
 Current event status.
 
 ```
-import { fetchEventStatus } from 'fpl-api'
+import { fetchEventStatus } from 'fantasypl'
 
 const data = await fetchEventStatus()
 ```
@@ -73,7 +73,7 @@ All fixtures or fixtures in a specific gameweek.
 | eventId | ID of a gameweek | number | undefined | false    |
 
 ```
-import { fetchFixtures } from 'fpl-api'
+import { fetchFixtures } from 'fantasypl'
 
 const data = await fetchFixtures()
 ```
@@ -87,7 +87,7 @@ Live data for a gameweek.
 | eventId | ID of a gameweek | number | -       | true     |
 
 ```
-import { fetchLive } from 'fpl-api'
+import { fetchLive } from 'fantasypl'
 
 const eventId = 33
 const data = await fetchLive(eventId)
@@ -102,7 +102,7 @@ Entry transfers etc.
 | entryId | ID of an entry team | number | -       | true     |
 
 ```
-import { fetchEntryHistory } from 'fpl-api'
+import { fetchEntryHistory } from 'fantasypl'
 
 const entryId = 1
 const data = await fetchEntryHistory(entryId)
@@ -117,7 +117,7 @@ Get an entry.
 | entryId | ID of an entry team | number | -       | true     |
 
 ```
-import { fetchEntry } from 'fpl-api'
+import { fetchEntry } from 'fantasypl'
 
 const entryId = 1
 const data = await fetchEntry(entryId)
@@ -134,7 +134,7 @@ Get an entry's matches from a H2H league.
 | page     | Page number         | number | 1       | true     |
 
 ```
-import { fetchH2HMatches } from 'fpl-api'
+import { fetchH2HMatches } from 'fantasypl'
 
 const leagueId = 1
 const entryId = 1
@@ -152,7 +152,7 @@ Get H2H league standings page.
 | options.pageNewEntries | Page number for new entries | number | 1       | true     |
 
 ```
-import { fetchH2HLeagueStandings } from 'fpl-api'
+import { fetchH2HLeagueStandings } from 'fantasypl'
 
 const leagueId = 1
 const data = await fetchH2HLeagueStandings(leagueId)
@@ -170,7 +170,7 @@ Get H2H league standings page.
 | options.phase          | Phase to show               | number | 1       | true     |
 
 ```
-import { fetchClassicLeague } from 'fpl-api'
+import { fetchClassicLeague } from 'fantasypl'
 
 const leagueId = 1
 const data = await fetchClassicLeague(leagueId)

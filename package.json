@@ -1,11 +1,11 @@
 {
-  "name": "fpl-api",
-  "version": "4.0.4",
+  "name": "fantasypl",
+  "version": "4.0.5",
   "description": "A wrapper for Fantasy Premier League API",
-  "author": "Jeppe Smith <mail@jeppesmith.dk>",
+  "author": "Faraz Patankar <farazpatankar@gmail.com>",
   "license": "MIT",
   "private": false,
-  "repository": "https://github.com/jeppe-smith/fpl-api",
+  "repository": "https://github.com/FarazPatankar/fantasypl",
   "scripts": {
     "test": "jest",
     "make:schema": "npx ts-json-schema-generator --path src/types.ts --out schema.json",
